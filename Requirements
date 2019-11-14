@@ -1,0 +1,35 @@
+Concerts/events application
+
+application that finds events/concerts in the user's local area.
+
+APIs to use: 
+1)Google Maps
+2)Eventbright/songkick
+3)Google calendar
+
+Third Party API:
+?
+geolocation
+google account
+time?
+
+
+Framework: 
+FLEXBOX
+Foundation
+GRID
+
+Basic functionality:
+user can search for events their area for a given date and type of event (Genre)
+User can filter results by price and rating
+5 day forcast for events
+distance from current location
+event info (date, time, cost, band, genre)
+link to buy tickets
+link to venue
+direction to the venue
+save as favorite or watch list
+share link
+
+
+
