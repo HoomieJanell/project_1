@@ -6,12 +6,14 @@ APIs to use:
 1)Google Maps
 2)Eventbright/songkick
 3)Google calendar
+4)Yelp
 
 Third Party API:
 ?
-geolocation
+geolocation (built-in?)
 google account
 time?
+yelp
 
 
 Framework: 
