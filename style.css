@@ -20,7 +20,7 @@
     bottom: 0;
     display: flex;
 }
-button{
+.favbtn{
     float: right;
     height: 30px;
     position: absolute;
@@ -40,3 +40,114 @@ button{
     margin-left: 15px;
     margin-top: 10px;
 }
+.wrapper {
+    display: flex;  
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
+  }
+  
+  .header {
+    display: flex;
+    flex-grow: 1;
+  }
+
+  .headeritem {
+      flex-grow: 1;
+  }
+
+  #title {
+      flex-grow: 4;
+  }
+  
+  .footer {
+    background: lightgreen;
+    padding: 10px;
+  }
+  
+  .main {
+    text-align: left;
+    background: deepskyblue;
+  }
+  
+  .aside-2 {
+    background: hotpink;
+  }
+
+  .main {
+      height: 580px;
+  }
+  
+  @media all and (min-width: 600px) {
+    .aside { flex: 1 0 0; }
+  }
+  
+  @media all and (min-width: 800px) {
+    .main    { flex: 3 0px; }
+    .aside-1 { order: 1; } 
+    .main    { order: 2; }
+    .aside-2 { order: 3; }
+    .footer  { order: 4; }
+  }
+  
+  body {
+    padding: 2em; 
+    margin: -35px;
+  }
+
+#searchbar {
+    height: 35px;
+    width: 180px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#searchbutton {
+    height: 40px;
+    width: 10px;
+    margin-top: 20px;
+}
+  /* .container {
+    display: flex;
+    flex-direction: row;
+}
+
+.row3 {
+    align-self: flex-end;
+}
+
+.row2 {
+    align-self: center;
+}
+
+.row1 {
+    align-self: flex-start;
+    display: flex;
+    flex-grow: 1;
+} */
+    /* flex-direction: row;
+    align-content: center;
+ */
+
+/* .row1 {
+    flex: 1;
+}
+
+.row2 {
+    flex: 2;
+}
+
+.row3 {
+    flex: 3;
+} */
+/* 
+.column {
+    flex: 1;
+} */
+
+ 
