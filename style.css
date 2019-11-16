@@ -1,1 +1,42 @@
+.container{
+    display: flex;
+}
+.skeleton{
+    background-color: lightgray;
+    border-radius: 25px;
+    height: 340px;
+    width: 250px;
+    margin: 20px;
+    position: relative;
+    box-shadow: 10px 10px 5px grey;
 
+}
+.bar{
+    background-color: white;
+    width: 250px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+}
+button{
+    float: right;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    margin: 15px 10px 0px 0px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border-style: solid;
+}
+.sub{
+    position: absolute;
+    bottom: 0;
+    margin: 10px 0px 5px 15px;
+}
+.title1{
+    margin-left: 15px;
+    margin-top: 10px;
+}
