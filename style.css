@@ -55,6 +55,7 @@
   .header {
     display: flex;
     flex-grow: 1;
+  
   }
 
   .headeritem {
@@ -66,7 +67,7 @@
   }
   
   .footer {
-    background: lightgreen;
+    background: white;
     padding: 10px;
   }
   
@@ -76,11 +77,12 @@
   }
   
   .aside-2 {
-    background: hotpink;
+    background:white;
   }
 
   .main {
       height: 580px;
+      background-color: white;
   }
   
   @media all and (min-width: 600px) {
@@ -150,4 +152,22 @@
     flex: 1;
 } */
 
+
+ body {
+   background-image: url(concert\ image.PNG);
+
+ }
+
+ img {
+   width: 960px;
+   margin-left: 5px;
+   margin-top: 10px;
+   padding-left: 10px;
+   height: 600px;
+ }
+
+ caption {
+   margin-left: 60px;
+ }
  
+
