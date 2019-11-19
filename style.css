@@ -60,6 +60,13 @@
 
   .headeritem {
       flex-grow: 1;
+      font-family: 'Righteous', cursive;
+      color: white;
+  }
+  .headertitle {
+    font-family:'Righteous', cursive;
+    color: white;
+    font-size: 50px;
   }
 
   #title {
@@ -69,6 +76,7 @@
   .footer {
     background: white;
     padding: 10px;
+    margin-bottom: -40px;
   }
   
   .main {
@@ -110,9 +118,10 @@
 }
 
 #searchbutton {
-    height: 40px;
+    height: 35px;
     width: 10px;
     margin-top: 20px;
+    color: black;
 }
   /* .container {
     display: flex;
@@ -160,8 +169,8 @@
 
  img {
    width: 960px;
-   margin-left: 5px;
-   margin-top: 10px;
+   margin-left: -15px;
+   margin-top: -5px;
    padding-left: 10px;
    height: 600px;
  }
@@ -170,4 +179,48 @@
    margin-left: 60px;
  }
  
+ .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-85%, -50%);
+  font-size: 50px;
+  font-family: 'Righteous', cursive;
+  margin-left: 60px;
+  color: white;
+}
+.bottom-right {
+  position: absolute;
+  bottom: -55px;
+  right: 380px;
+  font-size: 30px;
+  font-family: 'Righteous', cursive;
+  color: white;
+}
 
+.container {
+  border-radius: 5px;
+  background-color: black;
+  padding: 20px;
+}
+input[type=submit]:hover {
+  background-color: black;
+}
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(46, 44, 44);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
