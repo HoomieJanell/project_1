@@ -6,27 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="./style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Monda|Poppins|Righteous&display=swap" rel="stylesheet">
     <title>WhatDo</title>
     <script src="./lib/moment.js/moment.min.js"></script>
 
 </head>
 
-<body>
+<body >
+    
     <div class="wrapper">
         <header class="header">
             <input type=text placeholder="search" class="headeritem" id="searchbar">
             <button type=button class="headeritem" id="searchbutton">Search</button>
-            <h1 class="headeritem" id="title">WhatDo</h1>
+            <h1 class="headertitle" id="title">WhatDo</h1>
             <h2 class="headeritem"><nav class="nav">
-                    <a href="link">Home | </a>
-                    <a href="link">Favorites</a>
+                    <a href="link" style="color:black;">Home | </a>
+                    <a href="link" style="color:black;">Favorites</a>
 
                 </nav></h2>
         </header>
         <article class="main">
-            <p>words</p>
+            <div class="container">
+            <img src="concert.gif" alt="concert"/>
+            <div class="centered">Bringing Events Near you like never before </div>
+            <div class="bottom-right">Concerts Food&Drinks Charity&Causes</div>
+            </div>
         </article>
-        <aside class="aside aside-2">Aside 2</aside>
+        <aside class="aside aside-2">
+        <div class="container">
+        <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                      
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                      
+        <label for="country">City</label>
+        <select id="cityname" name="city">
+        <option value="austin">Austin</option>
+       <option value="dallas">Dallas</option>
+        <option value="houston">Houston</option>
+        </select>
+        <input type="submit" value="Submit">
+    </form>
+  </div>           
+    </aside>
         <footer class="footer">
                 <p>Copyright &copy; 2019</p>
                 
