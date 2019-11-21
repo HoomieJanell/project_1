@@ -2,20 +2,21 @@
     display: flex;
 }
 .skeleton{
-    background-color: lightgray;
+    background-color: whitesmoke;
     border-radius: 25px;
     height: 340px;
-    width: 250px;
-    margin: 20px;
+    width: 249px;
+    margin: 8px;
     position: relative;
     box-shadow: 10px 10px 5px grey;
 
 }
 .bar{
-    background-color: white;
-    width: 250px;
+    background-color: blue;
+    width: 245px;
     border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
+    border-bottom-right-radius: 15px;
+    margin-left:5px ;
     position: absolute;
     bottom: 0;
     display: flex;
@@ -224,3 +225,10 @@ input[type=text], select, textarea {
   margin-bottom: 16px;
   resize: vertical;
 }
+#fav {
+  margin-bottom: -5px;
+}
+#headerfirst {
+  margin-bottom: 20px;
+}
+
