@@ -1,0 +1,47 @@
+<<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Monda|Poppins|Righteous&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <title>WhatDo</title>
+    </head>
+
+    <body id="ticketmastermap">
+        <div class="wrapper">
+            <header class="header">
+                <input type=text placeholder="search" class="headeritem" id="searchbar">
+                <button type=button class="headeritem" id="searchbutton">Search</button>
+                <h1 class="headertitle" id="title">WhatDo</h1>
+                <h2 class="headeritem">
+                    <nav class="nav">
+                        <a href="link" style="color:black;">Home | </a>
+                        <a href="link" style="color:black;">Favorites</a>
+
+                    </nav>
+                </h2>
+            </header>
+            <p id="location"></p>
+            <div id="map"></div>
+            <div w-type="map" w-tmapikey="ngKYGjzcV2SX5MIxtwyrTztf3GCREITJ" w-googleapikey="AIzaSyBn_L8TbQJ4cs6XmivU1duYOgX-ojkDK1c" w-keyword="" w-theme="simple" w-colorscheme="light" w-width="350" w-height="600" w-size="25" w-border="1" w-borderradius="4" w-postalcode="" w-radius="25" w-countrycode="US" w-city="" w-period="week" w-layout="vertical" w-attractionid="" w-promoterid="" w-venueid="" w-affiliateid="" w-segmentid="" w-proportion="custom" w-geoposition="off" w-source="" w-latlong="" id="map1"></div>
+            <div id="events"></div>
+        </div>
+        <footer class="footer">
+            <p>Copyright &copy; 2019</p>
+
+        </footer>
+        </div>
+        <script src="map.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js" async defer></script>
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBn_L8TbQJ4cs6XmivU1duYOgX-ojkDK1c&libraries=visualization,places"
+            async defer></script>
+        <script
+            src="https://ticketmaster-api-staging.github.io/products-and-docs/widgets/map/1.0.0/lib/main-widget.js"></script>
+    </body>
+
+    </html>

@@ -170,4 +170,20 @@
    margin-left: 60px;
  }
  
+ #map {
+  width: 500px;
+  height: 400px;
+}
 
+#location {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  background-color: black;
+}
+
+#events {
+  background-color: white;
+  color: black;
+  text-align: center;
+}
