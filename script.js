@@ -38,8 +38,12 @@ $(document).ready(function(){
           console.log(response);
           console.log(areaID);
           for(i=0;i < response.resultsPage.results.event.length; i++){
+            var date = moment((response.resultsPage.results.event[i].start.date).replace(/-/g, '')).format("MMM Do YY");
             $(".title"+i).text(response.resultsPage.results.event[i].performance[0].displayName);
             $(".sub"+i).text(response.resultsPage.results.event[i].venue.displayName);
+            $(".date"+i).text(date);
+
+            console.log(date);
 
           }
       })
