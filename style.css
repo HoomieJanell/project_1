@@ -31,6 +31,10 @@
     border-radius: 50%;
     border-style: solid;
 }
+.row1{
+  display: flex;
+  margin: auto;
+}
 .sub{
     position: absolute;
     bottom: 0;
@@ -81,7 +85,7 @@
   
   .main {
     text-align: left;
-    background: deepskyblue;
+    background: #792A7D;
   }
   
   .aside-2 {
