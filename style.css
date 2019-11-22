@@ -2,20 +2,21 @@
     display: flex;
 }
 .skeleton{
-    background-color: lightgray;
+    background-color: whitesmoke;
     border-radius: 25px;
     height: 340px;
-    width: 250px;
-    margin: 20px;
+    width: 249px;
+    margin: 8px;
     position: relative;
     box-shadow: 10px 10px 5px grey;
 
 }
 .bar{
-    background-color: white;
-    width: 250px;
+    background-color: blue;
+    width: 245px;
     border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
+    border-bottom-right-radius: 15px;
+    margin-left:5px ;
     position: absolute;
     bottom: 0;
     display: flex;
@@ -30,6 +31,10 @@
     width: 30px;
     border-radius: 50%;
     border-style: solid;
+}
+.row1{
+  display: flex;
+  margin: auto;
 }
 .sub{
     position: absolute;
@@ -60,6 +65,13 @@
 
   .headeritem {
       flex-grow: 1;
+      font-family: 'Righteous', cursive;
+      color: white;
+  }
+  .headertitle {
+    font-family:'Righteous', cursive;
+    color: white;
+    font-size: 50px;
   }
 
   #title {
@@ -69,11 +81,12 @@
   .footer {
     background: white;
     padding: 10px;
+    margin-bottom: -40px;
   }
   
   .main {
     text-align: left;
-    background: deepskyblue;
+    background: #792A7D;
   }
   
   .aside-2 {
@@ -110,9 +123,10 @@
 }
 
 #searchbutton {
-    height: 40px;
+    height: 35px;
     width: 10px;
     margin-top: 20px;
+    color: black;
 }
   /* .container {
     display: flex;
@@ -160,8 +174,8 @@
 
  img {
    width: 960px;
-   margin-left: 5px;
-   margin-top: 10px;
+   margin-left: -15px;
+   margin-top: -5px;
    padding-left: 10px;
    height: 600px;
  }
@@ -202,6 +216,58 @@
   color: white;
   font-size: 30px;
   margin-top: 20px;
+=======
+ .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-85%, -50%);
+  font-size: 50px;
+  font-family: 'Righteous', cursive;
+  margin-left: 60px;
+  color: white;
+}
+.bottom-right {
+  position: absolute;
+  bottom: -55px;
+  right: 380px;
+  font-size: 30px;
+  font-family: 'Righteous', cursive;
+  color: white;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: black;
+  padding: 20px;
+}
+input[type=submit]:hover {
+  background-color: black;
+}
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(46, 44, 44);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+#fav {
+  margin-bottom: -5px;
+}
+#headerfirst {
+  margin-bottom: 20px;
+
 }
 
 .mapdesc {
