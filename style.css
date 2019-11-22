@@ -2,20 +2,21 @@
     display: flex;
 }
 .skeleton{
-    background-color: lightgray;
+    background-color: whitesmoke;
     border-radius: 25px;
     height: 340px;
-    width: 250px;
-    margin: 20px;
+    width: 249px;
+    margin: 8px;
     position: relative;
     box-shadow: 10px 10px 5px grey;
 
 }
 .bar{
-    background-color: white;
-    width: 250px;
+    background-color: blue;
+    width: 245px;
     border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
+    border-bottom-right-radius: 15px;
+    margin-left:5px ;
     position: absolute;
     bottom: 0;
     display: flex;
@@ -146,6 +147,39 @@
    margin-left: 60px;
  }
  
+ #map {
+  width: 500px;
+  height: 400px;
+}
+
+#location {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  background-color: black;
+}
+
+#events {
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+
+#map1 {
+  margin-left: 300px;
+  margin-top: -400px;
+  border: 15px solid black;
+  margin-bottom: 20px;
+  width: 300px;
+}
+
+.maptitle {
+  font-family: 'Righteous', cursive;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  margin-top: 20px;
+=======
  .centered {
   position: absolute;
   top: 50%;
@@ -190,4 +224,19 @@ input[type=text], select, textarea {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+}
+#fav {
+  margin-bottom: -5px;
+}
+#headerfirst {
+  margin-bottom: 20px;
+
+}
+
+.mapdesc {
+  font-family: 'Righteous', cursive;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  margin-top: -30px;
 }
