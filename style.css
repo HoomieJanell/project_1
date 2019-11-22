@@ -187,3 +187,27 @@
   color: black;
   text-align: center;
 }
+
+#map1 {
+  margin-left: 300px;
+  margin-top: -400px;
+  border: 15px solid black;
+  margin-bottom: 20px;
+  width: 300px;
+}
+
+.maptitle {
+  font-family: 'Righteous', cursive;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.mapdesc {
+  font-family: 'Righteous', cursive;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  margin-top: -30px;
+}

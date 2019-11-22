@@ -1,32 +1,74 @@
-function getLocation() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition, showError);
-    } else {
-        var x = document.getElementById("location");
-        x.innerHTML = "Geolocation is not supported by this browser.";
-    }
-}
-function showPosition(position) {
-    var x = document.getElementById("location");
-    // x.innerHTML = "Latitude: " + position.coords.latitude + 
-    // "<br>Longitude: " + position.coords.longitude; 
-    var latlon = position.coords.latitude + "," + position.coords.longitude;
-    $("#map1").attr("w-latlong", latlon);
+// $(document).ready(function(){
+  
+  
+  
+  
+//   function getLocation() {
+//     if (navigator.geolocation) {
+//         navigator.geolocation.getCurrentPosition(showPosition, showError);
+//     } else {
+//         var x = document.getElementById("location");
+//         x.innerHTML = "Geolocation is not supported by this browser.";
+//     }
+// }
+// function showPosition(position) {
+//     var x = document.getElementById("location");
+//     // x.innerHTML = "Latitude: " + position.coords.latitude + 
+//     // "<br>Longitude: " + position.coords.longitude; 
+//     var latlon = position.coords.latitude + "," + position.coords.longitude;
+//     $("#map1").attr("w-latlong", latlon);
+    
+// }
 
-    $.ajax({
-        type: "GET",
-        url: "https://maps.googleapis.com/maps/api/geocode/json?latlng=" + latlon + "&location_type=ROOFTOP&result_type=street_address&key=AIzaSyBn_L8TbQJ4cs6XmivU1duYOgX-ojkDK1c",
-        dataType: "json",
-        success: function(json) {
-            console.log(json);
-            var c = json.results[0].address_components[3].long_name;
-            $("#map1").attr("w-city", c);
-            console.log(c);
+    // $.ajax({
+    //     type: "GET",
+    //     url: "https://maps.googleapis.com/maps/api/geocode/json?latlng=" + latlon + "&location_type=ROOFTOP&result_type=street_address&key=AIzaSyBn_L8TbQJ4cs6XmivU1duYOgX-ojkDK1c",
+    //     dataType: "json",
+    //     success: function(json) {
+    //         console.log(json);
+    //         var c = json.results[0].address_components[3].long_name;
+    //         $("#map1").attr("w-city", c);
+    //         console.log(c);
 
-        }
+    //         $("#map1").reload()
 
-    })
+    //     }
 
+// })
+// }
+
+// })
+var mapfromhtml = $("<div>").attr({
+  "w-type":"map",
+  "w-tmapikey":"ngKYGjzcV2SX5MIxtwyrTztf3GCREITJ",
+  "w-googleapikey":"AIzaSyBn_L8TbQJ4cs6XmivU1duYOgX-ojkDK1c",
+  "w-keyword":'""',
+  "w-theme":"simple",
+  "w-colorscheme":"light",
+  "w-width":"350",
+  "w-height":"600",
+  "w-size":"25",
+  "w-border":"1",
+  "w-borderradius":"4",
+  "w-postalcode":'""',
+  "w-radius":"25",
+  "w-countrycode":"US",
+  "w-city":'""',
+  "w-period":"week",
+  "w-layout":"vertical",
+  "w-attractionid":'""',
+  "w-promoterid":'""',
+  "w-venueid":'""',
+  "w-affiliateid":'""',
+  "w-segmentid":'""',
+  "w-proportion":"custom",
+  "w-geoposition":"on",
+  "w-source":'""',
+  "w-latlong":'""',
+  id:"map1"
+});
+
+$(".wrapper").append(mapfromhtml);
 
     // $.ajax({
     //   type:"GET",
@@ -45,7 +87,6 @@ function showPosition(position) {
     //            }
     // });
 
-}
 
 function showError(error) {
     switch(error.code) {
@@ -96,3 +137,6 @@ function addMarker(map, event) {
 
 
 getLocation();
+
+
+});
