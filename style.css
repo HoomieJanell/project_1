@@ -165,21 +165,6 @@
   text-align: center;
 }
 
-#map1 {
-  margin-left: 300px;
-  margin-top: -400px;
-  border: 15px solid black;
-  margin-bottom: 20px;
-  width: 300px;
-}
-
-.maptitle {
-  font-family: 'Righteous', cursive;
-  background-color: black;
-  color: white;
-  font-size: 30px;
-  margin-top: 20px;
-}
  .centered {
   position: absolute;
   top: 50%;
@@ -239,4 +224,26 @@ input[type=text], select, textarea {
   color: white;
   font-size: 20px;
   margin-top: -30px;
+}
+
+.mapbody {
+  align-content: center;
+  background-color: black;
+  margin-right: -100px;
+}
+
+#map1 {
+  margin-left: 300px;
+  margin-top: -400px;
+  border: 15px solid black;
+  margin-bottom: 20px;
+  width: 300px;
+}
+
+.maptitle {
+  font-family: 'Righteous', cursive;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  margin-top: 20px;
 }

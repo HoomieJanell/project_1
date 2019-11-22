@@ -25,15 +25,15 @@
                 </nav>
             </h2>
         </header>
-        <div>
-            <p class="maptitle">Austin Map</p>
-            <p class="mapdesc">This map displays other events in Austin. Click the marker for details, or to purchase tickets.</p>
+        <div class="mapbody">
+            <p class="maptitle">Events Map</p>
+            <p class="mapdesc">This map displays other events happening in your area. Click the marker for details, or to purchase tickets.</p>
             <p id="location"></p>
             <div id="map"></div>
             <div w-type="map" w-tmapikey="ngKYGjzcV2SX5MIxtwyrTztf3GCREITJ"
                 w-googleapikey="AIzaSyBn_L8TbQJ4cs6XmivU1duYOgX-ojkDK1c" w-keyword="" w-theme="simple"
                 w-colorscheme="light" w-width="800" w-height="650" w-size="25" w-border="5" w-borderradius="5"
-                w-postalcode="" w-radius="25" w-countrycode="US" w-city="Austin" w-period="week" w-layout="vertical"
+                w-postalcode="" w-radius="25" w-countrycode="US" w-city="" w-period="week" w-layout="vertical"
                 w-attractionid="" w-promoterid="" w-venueid="" w-affiliateid="" w-segmentid="" w-proportion="custom"
                 w-geoposition="on" w-source="" w-latlong="" w-margin="100" id="map1"></div>
             <!-- <div id="events"></div> -->
@@ -44,6 +44,7 @@
         </footer>
     </div>
     <!-- <script src="https://maps.googleapis.com/maps/api/js" async defer></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBn_L8TbQJ4cs6XmivU1duYOgX-ojkDK1c&libraries=visualization,places"
         async defer></script>

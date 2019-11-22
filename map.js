@@ -3,41 +3,39 @@
   
   
   
-//   function getLocation() {
-//     if (navigator.geolocation) {
-//         navigator.geolocation.getCurrentPosition(showPosition, showError);
-//     } else {
-//         var x = document.getElementById("location");
-//         x.innerHTML = "Geolocation is not supported by this browser.";
-//     }
-// }
-// function showPosition(position) {
-//     var x = document.getElementById("location");
-//     // x.innerHTML = "Latitude: " + position.coords.latitude + 
-//     // "<br>Longitude: " + position.coords.longitude; 
-//     var latlon = position.coords.latitude + "," + position.coords.longitude;
-//     $("#map1").attr("w-latlong", latlon);
+  function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition, showError);
+    } else {
+        var x = document.getElementById("location");
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+function showPosition(position) {
+    var x = document.getElementById("location");
+    // x.innerHTML = "Latitude: " + position.coords.latitude + 
+    // "<br>Longitude: " + position.coords.longitude; 
+    var latlon = position.coords.latitude + "," + position.coords.longitude;
+    $("#map1").attr("w-latlong", latlon);
     
-// }
+}
 
-    // $.ajax({
-    //     type: "GET",
-    //     url: "https://maps.googleapis.com/maps/api/geocode/json?latlng=" + latlon + "&location_type=ROOFTOP&result_type=street_address&key=AIzaSyBn_L8TbQJ4cs6XmivU1duYOgX-ojkDK1c",
-    //     dataType: "json",
-    //     success: function(json) {
-    //         console.log(json);
-    //         var c = json.results[0].address_components[3].long_name;
-    //         $("#map1").attr("w-city", c);
-    //         console.log(c);
+    $.ajax({
+        type: "GET",
+        url: "https://maps.googleapis.com/maps/api/geocode/json?latlng=" + latlon + "&location_type=ROOFTOP&result_type=street_address&key=AIzaSyBn_L8TbQJ4cs6XmivU1duYOgX-ojkDK1c",
+        dataType: "json",
+        success: function(json) {
+            console.log(json);
+            var c = json.results[0].address_components[3].long_name;
+            $("#map1").attr("w-city", c);
+            console.log(c);
 
-    //         $("#map1").reload()
+//             $("#map1").reload()
 
-    //     }
+        }
 
-// })
-// }
+})
 
-// })
 var mapfromhtml = $("<div>").attr({
   "w-type":"map",
   "w-tmapikey":"ngKYGjzcV2SX5MIxtwyrTztf3GCREITJ",
@@ -138,5 +136,3 @@ function addMarker(map, event) {
 
 getLocation();
 
-
-});
