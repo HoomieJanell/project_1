@@ -30,6 +30,7 @@
     width: 30px;
     border-radius: 50%;
     border-style: solid;
+    background-color: transparent;
 }
 .row1{
   display: flex;
@@ -75,6 +76,7 @@
 
   #title {
       flex-grow: 4;
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   }
   
   .footer {
@@ -127,45 +129,6 @@
     margin-top: 20px;
     color: black;
 }
-  /* .container {
-    display: flex;
-    flex-direction: row;
-}
-
-.row3 {
-    align-self: flex-end;
-}
-
-.row2 {
-    align-self: center;
-}
-
-.row1 {
-    align-self: flex-start;
-    display: flex;
-    flex-grow: 1;
-} */
-    /* flex-direction: row;
-    align-content: center;
- */
-
-/* .row1 {
-    flex: 1;
-}
-
-.row2 {
-    flex: 2;
-}
-
-.row3 {
-    flex: 3;
-} */
-/* 
-.column {
-    flex: 1;
-} */
-
-
  body {
    background-image: url(concert\ image.PNG);
 
