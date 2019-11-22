@@ -1,4 +1,5 @@
 $(document).ready(function () {
+ //Start 5 day
   var apiKey = "eWIxuDJ59JLKMebO";
   var areaID;
   var queryURL = "https://api.songkick.com/api/3.0/search/locations.json?location=clientip" + "&apikey=" + apiKey + "&per_page=1&page=1";
@@ -26,4 +27,27 @@ $(document).ready(function () {
       }
     })
   })
+  //End 5 day
+
+$("#searchbutton").on("click", function(){
+  var keyword = $("#searchbar").val();
+  var apikey = "ngKYGjzcV2SX5MIxtwyrTztf3GCREITJ"
+  $.ajax({
+    method:"GET",
+    url:"https://app.ticketmaster.com/discovery/v2/events.json?keyword="+ keyword + "&apikey=" + apikey,
+    success: function(response) {
+                console.log(response);
+                console.log((response._embedded.events).length);
+                // Parse the response.
+                // Do other things.
+                for (i = 0; i < (response._embedded.events).length; i++){
+
+                }
+             },
+    error: function(xhr, status, err) {
+                // This time, we do not end up here!
+             }
+  });
+
+})
 });
