@@ -245,19 +245,27 @@ input[type=text], select, textarea {
   display: flex;
   flex-direction: column;
 }
-#resultRow{
+.resultRow{
   width: 100%;
-  border: 1px white solid;
   border-radius: 5px;
   padding: 10px;
   margin: 5px 0px 5px 0px;
   color: white;
   font-family: 'Righteous', cursive;
+  flex-direction: row;
+  flex-shrink: 1;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 #resultsTitle{
   text-align: center;
   font-size: 50px;
   color: white;
   font-family: 'Righteous', cursive;
-
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.rows{
+  display: flex;
+  border: 1px white solid;
+  justify-content: flex-start;
+  border-radius: 5px;
 }
