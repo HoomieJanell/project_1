@@ -9,6 +9,7 @@ AS AN individual who is bored
 I WANT to find events in my area
 SO THAT I can have fun
 
+We used HTML, CSS, Javascript, and Jquery to create our application.
 The framework of our web app was done with Flexbox mainly. For our API’s we used the ticketmaster API, Google maps API, and SongKick API.
 We have one main page, a map page were the events will be listed, and a search result page, which will be prompted  whenever  the search button is clicked.
 
