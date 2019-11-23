@@ -74,10 +74,10 @@ $("#searchbutton").on("click", function(){
   console.log("cndfsdv");
   console.log(window.location.href)
 
-  if (window.location.href === "file:///C:/Users/jpellow/bootcamp/project_1/results.html"){
+  if (window.location.href === "./results.html"){
     console.log("if")
     var searchTerm = $("#searchbar").val();
-    window.location.href = "file:///C:/Users/jpellow/bootcamp/project_1/results.html?key="+searchTerm;
+    window.location.href = "./results.html?key="+searchTerm;
     var urlParams = new URLSearchParams(window.location.search);
     searchResults(urlParams.get('key'));
 
@@ -85,7 +85,7 @@ $("#searchbutton").on("click", function(){
   else{
     console.log("else")
     var searchTerm = $("#searchbar").val();
-    window.location.href = "file:///C:/Users/jpellow/bootcamp/project_1/results.html?key="+searchTerm;
+    window.location.href = "./results.html?key="+searchTerm;
     var urlParams = new URLSearchParams(window.location.search);
     console.log(urlParams.get('key'));
   
