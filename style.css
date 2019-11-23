@@ -254,6 +254,7 @@ input[type=text], select, textarea {
   border: 1px white solid;
   justify-content: flex-start;
   border-radius: 5px;
+}
 
 .mapbody {
   align-content: center;
